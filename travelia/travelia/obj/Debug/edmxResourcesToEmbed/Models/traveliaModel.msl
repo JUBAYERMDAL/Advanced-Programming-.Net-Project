@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="traveliaModelStoreContainer" CdmEntityContainer="traveliaEntitiesContext">
+    <EntitySetMapping Name="bookinginfoes">
+      <EntityTypeMapping TypeName="traveliaModel.bookinginfo">
+        <MappingFragment StoreEntitySet="bookinginfo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="travellermail" ColumnName="travellermail" />
+          <ScalarProperty Name="hotelempmail" ColumnName="hotelempmail" />
+          <ScalarProperty Name="hotelname" ColumnName="hotelname" />
+          <ScalarProperty Name="checkin" ColumnName="checkin" />
+          <ScalarProperty Name="checkout" ColumnName="checkout" />
+          <ScalarProperty Name="days" ColumnName="days" />
+          <ScalarProperty Name="roomtype" ColumnName="roomtype" />
+          <ScalarProperty Name="totalcost" ColumnName="totalcost" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="customercaresalaries">
+      <EntityTypeMapping TypeName="traveliaModel.customercaresalary">
+        <MappingFragment StoreEntitySet="customercaresalary">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="custcaremail" ColumnName="custcaremail" />
+          <ScalarProperty Name="previoussalary" ColumnName="previoussalary" />
+          <ScalarProperty Name="currentsalary" ColumnName="currentsalary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hotelinfoes">
+      <EntityTypeMapping TypeName="traveliaModel.hotelinfo">
+        <MappingFragment StoreEntitySet="hotelinfo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="hotelempmail" ColumnName="hotelempmail" />
+          <ScalarProperty Name="hotelname" ColumnName="hotelname" />
+          <ScalarProperty Name="division" ColumnName="division" />
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="totalroom" ColumnName="totalroom" />
+          <ScalarProperty Name="roomtypes" ColumnName="roomtypes" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="pictures" ColumnName="pictures" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="messagetocares">
+      <EntityTypeMapping TypeName="traveliaModel.messagetocare">
+        <MappingFragment StoreEntitySet="messagetocare">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sendto" ColumnName="sendto" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="messagetohotels">
+      <EntityTypeMapping TypeName="traveliaModel.messagetohotel">
+        <MappingFragment StoreEntitySet="messagetohotel">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="msgfrom" ColumnName="msgfrom" />
+          <ScalarProperty Name="msgto" ColumnName="msgto" />
+          <ScalarProperty Name="msg" ColumnName="msg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="salarysheets">
+      <EntityTypeMapping TypeName="traveliaModel.salarysheet">
+        <MappingFragment StoreEntitySet="salarysheet">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="custcaremail" ColumnName="custcaremail" />
+          <ScalarProperty Name="salarypaid" ColumnName="salarypaid" />
+          <ScalarProperty Name="paidmonth" ColumnName="paidmonth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="servicecharges">
+      <EntityTypeMapping TypeName="traveliaModel.servicecharge">
+        <MappingFragment StoreEntitySet="servicecharge">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="usermail" ColumnName="usermail" />
+          <ScalarProperty Name="paidmonth" ColumnName="paidmonth" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="travelplaces">
+      <EntityTypeMapping TypeName="traveliaModel.travelplace">
+        <MappingFragment StoreEntitySet="travelplace">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="travelplace1" ColumnName="travelplace" />
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="division" ColumnName="division" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="travelguidermail" ColumnName="travelguidermail" />
+          <ScalarProperty Name="pictures" ColumnName="pictures" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="traveliaModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="usermail" ColumnName="usermail" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="usertype" ColumnName="usertype" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userinfoes">
+      <EntityTypeMapping TypeName="traveliaModel.userinfo">
+        <MappingFragment StoreEntitySet="userinfo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="usermail" ColumnName="usermail" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="usertype" ColumnName="usertype" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="phoneno" ColumnName="phoneno" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

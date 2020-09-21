@@ -1,0 +1,75 @@
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\roslyn\csc.exe
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\roslyn\vbc.exe
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\roslyn\VBCSCompiler.exe
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\travelia.dll.config
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\travelia.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\travelia.pdb
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\EntityFramework.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\EntityFramework.SqlServer.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\System.Web.Helpers.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\System.Web.Mvc.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\System.Web.Razor.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\System.Web.Webpages.Deployment.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\System.Web.Webpages.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\System.Web.Webpages.Razor.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\EntityFramework.xml
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\EntityFramework.SqlServer.xml
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\System.Web.Razor.xml
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\System.Web.Webpages.xml
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\System.Web.Webpages.Deployment.xml
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\System.Web.Webpages.Razor.xml
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\System.Web.Helpers.xml
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\bin\System.Web.Mvc.xml
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\obj\Debug\travelia.dll
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\obj\Debug\travelia.pdb
+C:\Users\nafiz\Documents\Visual Studio 2015\Projects\travelia\travelia\obj\Debug\travelia.csprojResolveAssemblyReference.cache
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\roslyn\csc.exe
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\roslyn\vbc.exe
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\roslyn\VBCSCompiler.exe
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\travelia.dll.config
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\travelia.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\travelia.pdb
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\EntityFramework.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\EntityFramework.SqlServer.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\System.Web.Helpers.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\System.Web.Mvc.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\System.Web.Razor.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\System.Web.Webpages.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\System.Web.Webpages.Razor.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\EntityFramework.xml
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\EntityFramework.SqlServer.xml
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\System.Web.Razor.xml
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\System.Web.Webpages.xml
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\System.Web.Webpages.Razor.xml
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\System.Web.Helpers.xml
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\bin\System.Web.Mvc.xml
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\obj\Debug\travelia.csprojAssemblyReference.cache
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\obj\Debug\travelia.csproj.CopyComplete
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\obj\Debug\travelia.dll
+C:\Users\Jubayer\Desktop\travelia\travelia\travelia\obj\Debug\travelia.pdb

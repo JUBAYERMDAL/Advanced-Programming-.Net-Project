@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="traveliaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="bookinginfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="travellermail" Type="varchar" MaxLength="50" />
+    <Property Name="hotelempmail" Type="varchar" MaxLength="50" />
+    <Property Name="hotelname" Type="varchar" MaxLength="50" />
+    <Property Name="checkin" Type="varchar" MaxLength="100" />
+    <Property Name="checkout" Type="varchar" MaxLength="100" />
+    <Property Name="days" Type="varchar" MaxLength="20" />
+    <Property Name="roomtype" Type="varchar" MaxLength="200" />
+    <Property Name="totalcost" Type="varchar" MaxLength="50" />
+    <Property Name="status" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="customercaresalary">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="custcaremail" Type="varchar" MaxLength="50" />
+    <Property Name="previoussalary" Type="varchar" MaxLength="50" />
+    <Property Name="currentsalary" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="hotelinfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="hotelempmail" Type="varchar" MaxLength="50" />
+    <Property Name="hotelname" Type="varchar" MaxLength="50" />
+    <Property Name="division" Type="varchar" MaxLength="20" />
+    <Property Name="location" Type="varchar" MaxLength="250" />
+    <Property Name="totalroom" Type="varchar" MaxLength="20" />
+    <Property Name="roomtypes" Type="varchar(max)" />
+    <Property Name="description" Type="varchar" MaxLength="2000" />
+    <Property Name="pictures" Type="varchar" MaxLength="40" />
+    <Property Name="status" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="messagetocare">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sendto" Type="varchar" MaxLength="50" />
+    <Property Name="message" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="messagetohotel">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="msgfrom" Type="varchar" MaxLength="50" />
+    <Property Name="msgto" Type="varchar" MaxLength="50" />
+    <Property Name="msg" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="salarysheet">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="custcaremail" Type="varchar" MaxLength="50" />
+    <Property Name="salarypaid" Type="varchar" MaxLength="50" />
+    <Property Name="paidmonth" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="servicecharge">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="usermail" Type="varchar" MaxLength="50" />
+    <Property Name="paidmonth" Type="varchar" MaxLength="20" />
+    <Property Name="amount" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="travelplace">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="travelplace" Type="varchar" MaxLength="50" />
+    <Property Name="location" Type="varchar" MaxLength="100" />
+    <Property Name="division" Type="varchar" MaxLength="20" />
+    <Property Name="description" Type="varchar" MaxLength="1234" />
+    <Property Name="travelguidermail" Type="varchar" MaxLength="50" />
+    <Property Name="pictures" Type="varchar" MaxLength="30" />
+    <Property Name="status" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="usermail" Type="varchar" MaxLength="50" />
+    <Property Name="password" Type="varchar" MaxLength="50" />
+    <Property Name="usertype" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="userinfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="firstname" Type="varchar" MaxLength="50" />
+    <Property Name="lastname" Type="varchar" MaxLength="50" />
+    <Property Name="usermail" Type="varchar" MaxLength="70" />
+    <Property Name="password" Type="varchar" MaxLength="20" />
+    <Property Name="usertype" Type="varchar" MaxLength="20" />
+    <Property Name="address" Type="varchar" MaxLength="100" />
+    <Property Name="phoneno" Type="varchar" MaxLength="30" />
+    <Property Name="status" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityContainer Name="traveliaModelStoreContainer">
+    <EntitySet Name="bookinginfo" EntityType="Self.bookinginfo" Schema="travelia" store:Type="Tables" />
+    <EntitySet Name="customercaresalary" EntityType="Self.customercaresalary" Schema="travelia" store:Type="Tables" />
+    <EntitySet Name="hotelinfo" EntityType="Self.hotelinfo" Schema="travelia" store:Type="Tables" />
+    <EntitySet Name="messagetocare" EntityType="Self.messagetocare" Schema="travelia" store:Type="Tables" />
+    <EntitySet Name="messagetohotel" EntityType="Self.messagetohotel" Schema="travelia" store:Type="Tables" />
+    <EntitySet Name="salarysheet" EntityType="Self.salarysheet" Schema="travelia" store:Type="Tables" />
+    <EntitySet Name="servicecharge" EntityType="Self.servicecharge" Schema="travelia" store:Type="Tables" />
+    <EntitySet Name="travelplace" EntityType="Self.travelplace" Schema="travelia" store:Type="Tables" />
+    <EntitySet Name="user" EntityType="Self.user" Schema="travelia" store:Type="Tables" />
+    <EntitySet Name="userinfo" EntityType="Self.userinfo" Schema="travelia" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

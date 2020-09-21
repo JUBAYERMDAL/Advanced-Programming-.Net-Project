@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="traveliaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="bookinginfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="travellermail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="hotelempmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="hotelname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="checkin" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="checkout" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="days" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="roomtype" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="totalcost" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="customercaresalary">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="custcaremail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="previoussalary" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="currentsalary" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="hotelinfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="hotelempmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="hotelname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="division" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="location" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="totalroom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="roomtypes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="description" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="pictures" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="messagetocare">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sendto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="messagetohotel">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="msgfrom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="msgto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="msg" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="salarysheet">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="custcaremail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="salarypaid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="paidmonth" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="servicecharge">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="usermail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="paidmonth" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="amount" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="travelplace">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="travelplace1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="location" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="division" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="description" Type="String" MaxLength="1234" FixedLength="false" Unicode="false" />
+    <Property Name="travelguidermail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pictures" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="usermail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="usertype" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="userinfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="firstname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="lastname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="usermail" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="usertype" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="phoneno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="traveliaEntitiesContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="bookinginfoes" EntityType="Self.bookinginfo" />
+    <EntitySet Name="customercaresalaries" EntityType="Self.customercaresalary" />
+    <EntitySet Name="hotelinfoes" EntityType="Self.hotelinfo" />
+    <EntitySet Name="messagetocares" EntityType="Self.messagetocare" />
+    <EntitySet Name="messagetohotels" EntityType="Self.messagetohotel" />
+    <EntitySet Name="salarysheets" EntityType="Self.salarysheet" />
+    <EntitySet Name="servicecharges" EntityType="Self.servicecharge" />
+    <EntitySet Name="travelplaces" EntityType="Self.travelplace" />
+    <EntitySet Name="users" EntityType="Self.user" />
+    <EntitySet Name="userinfoes" EntityType="Self.userinfo" />
+  </EntityContainer>
+</Schema>

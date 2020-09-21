@@ -1,0 +1,241 @@
+﻿@model IEnumerable<travelia.Models.hotelinfo>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel Employee!</title>
+
+    <link rel="stylesheet" href="~/Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Assets/css/all.min.css">
+    <link rel="stylesheet" href="~/Assets/css/admin.css">
+    <!-- <link rel="stylesheet" href="/public~/Assets/css/admin.scss"> -->
+    <link rel="stylesheet" href="~/Assets/css/floatmessage.css">
+    <link rel="stylesheet" href="~/Assets/css/Chart.min.css">
+</head>
+
+<body>
+    <!-- header part starts -->
+
+    <header class="header-part">
+        <div class="items container-fluid bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img class="wow rotateIn" src="~/Assets/images/travelia/logo.png" data-wow-duration="3s"
+                         data-wow-iteration="40" height="50" width="60" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <form class="form-inline ml-auto my-2 my-lg-0">
+                        <a href="" class="bell mr-4">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                        <a href="/logout" role="button" class="btn btn-outline-success mr-4">Log out</a>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- header part starts -->
+    <!-- admin dash part starts -->
+    <section class="admin-dash-part">
+
+        <div class=" container-fluid">
+
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="items text-center">
+
+                        <img src="~/Assets/images/admin/admin.png" alt="">
+                        <h4>Hotel</h4>
+
+                        <div class="row btns">
+                            <div class="col-md-3">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="col-md-9 text-center">
+                                <a href="/hotel">Home</a>
+                            </div>
+                        </div>
+
+                        <div class="row btns">
+
+                            <div class="col-md-3">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-9 text-center">
+                                <a href="/hotel/hotelProfile">My Info</a>
+                            </div>
+                        </div>
+
+                        <div class="row btns">
+
+                            <div class="col-md-3">
+                                <i class="fas fa-hotel"></i>
+                            </div>
+                            <div class="col-md-9 text-center">
+                                <a href="/hotel/hotelAdd">Add my hotel</a>
+                            </div>
+                        </div>
+
+                        <div class="row btns">
+
+                            <div class="col-md-3">
+                                <i class="fas fa-hotel"></i>
+                            </div>
+                            <div class="col-md-9 text-center">
+                                <a href="/hotel/hotelReq">Booking req</a>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="items2">
+                        @{
+                            int singlebed=0, doublebed=0, suit=0;
+                            if (Model.Count()<1)
+                            {
+                                <div style="margin-left:300px;margin-top:200px; background:#e1d5d5;width:32%">
+                                <h4>Your Hotel Not Registered Yet!!</h4>
+
+                                </div>
+                            }
+                            else
+                            {
+                                foreach(var item in Model)
+                                {
+                                    if (item.roomtypes != "")
+                                    {
+                                        string[] totalroom = item.roomtypes.Split(',');
+                                        string rent = new string(totalroom[0].Where(Char.IsDigit).ToArray());
+                                        singlebed = Int32.Parse(rent);
+                                        doublebed = Int32.Parse(new string(totalroom[1].Where(Char.IsDigit).ToArray()));
+                                        suit = Int32.Parse(new string(totalroom[2].Where(Char.IsDigit).ToArray()));
+                                    }
+                                }
+
+                            }
+                        }
+                           
+                            
+
+
+                        @foreach (var item in Model)
+                        {
+
+                            <form action="" method="post">
+                                <label for="">Hotel Name</label>
+                                <input type="text" name="hotelname" value="@Url.Content(item.hotelname)" class="form-control " id="hotelname">
+
+                                <label for="">Total Rooms</label>
+                                <input type="number" name="totalroom" value="@Url.Content(item.totalroom)" class="form-control " id="totalroom">
+
+                                <label for="">Single bed room price per night</label>
+                                <input type="number" name="singlebed" value="@singlebed" class="form-control " id="totalroom">
+                                <label for="">Double bed Room price per night</label>
+                                <input type="number" name="doublebed" value="@doublebed" class="form-control " id="totalroom">
+                                <label for="">Suit Room price per night</label>
+                                <input type="number" name="suit" value="@suit" class="form-control " id="totalroom">
+
+                                <input type="submit" value="update" name="update" class="btn btn-outline-info mt-2">
+                                <input type="submit" value="delete" name="submit" class="btn btn-outline-danger ml-3 mt-2">
+                            </form>
+                        }
+
+
+
+                            
+                           
+                        
+                     
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- admin dash part ends -->
+    <!-- floating message part starts -->
+    <div class="floating-chat">
+        <i class="fas fa-comments"></i>
+
+        <form action="" id="message-container">
+
+            <div class="chat">
+                <div class="header">
+                    <span class="title">
+                        what's on your mind?
+                    </span>
+                    <button>
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+
+                </div>
+                <ul class="messages"></ul>
+                <div class="footer">
+                    <!-- <div class="text-box" contenteditable="true" disabled="true"></div> -->
+                    <input type="text" class="text-box" id="message-input">
+                    <input type="submit" value="send" class="btn btn-outline-success" name="" id="sendMessage">
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- floating message part ends -->
+
+
+
+
+
+
+
+
+
+    <script src="~/Assets/js/jquery-3.4.1.min.js"></script>
+    <script src="~/Assets/js/popper.min.js"></script>
+    <script src="~/Assets/js/bootstrap.min.js"></script>
+    <script src="~/Assets/js/Chart.min.js"></script>
+    <script src="~/Assets/js/floatmessage.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script>
+
+$(function () {
+
+    var socket = io();
+    $('#message-container').submit(function(e){
+      e.preventDefault(); // prevents page reloading
+      $selfMsg=$('#message-input').val();
+      socket.emit('send-chat-message', $('#message-input').val());
+      $('.messages').append($('<li class="other">').text($selfMsg));
+      $('#message-input').val('');
+      return false;
+    });
+    socket.on('chat-message', function(msg){
+      $('.messages').append($('<li class="self" >').text("CUSTOMER CARE:"+msg));
+    });
+  });
+
+
+
+    </script>
+
+
+</body>
+
+</html>

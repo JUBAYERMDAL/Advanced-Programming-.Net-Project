@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FE7DBDA5-84EB-497A-99D5-A05CFA34C953}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>travelia</RootNamespace>
+    <AssemblyName>travelia</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\css\admin.css" />
+    <Content Include="Assets\css\all.min.css" />
+    <Content Include="Assets\css\animate.css" />
+    <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\care.css" />
+    <Content Include="Assets\css\Chart.min.css" />
+    <Content Include="Assets\css\floatmessage.css" />
+    <Content Include="Assets\css\jquery-confirm.min.css" />
+    <Content Include="Assets\css\subtle-slideshow.css" />
+    <Content Include="Assets\css\traveliaStyle.css" />
+    <Content Include="Assets\css\travellerDest.css" />
+    <Content Include="Assets\css\vegas.min.css" />
+    <Content Include="Assets\images\admin\admin.png" />
+    <Content Include="Assets\images\travelia\chitt-1.png" />
+    <Content Include="Assets\images\travelia\chitt-2.png" />
+    <Content Include="Assets\images\travelia\chitt-3.png" />
+    <Content Include="Assets\images\travelia\chittagong.jpg" />
+    <Content Include="Assets\images\travelia\logo.png" />
+    <Content Include="Assets\images\travelia\place-1.jpg" />
+    <Content Include="Assets\images\travelia\place-2.jpg" />
+    <Content Include="Assets\images\travelia\place-3.jpg" />
+    <Content Include="Assets\images\travelia\place-4.jpg" />
+    <Content Include="Assets\images\travelia\stickyimage.jpg" />
+    <Content Include="Assets\images\travelia\syl-1.png" />
+    <Content Include="Assets\images\travelia\syl-2.png" />
+    <Content Include="Assets\images\travelia\syl-3.png" />
+    <Content Include="Assets\images\travelia\sylhet.jpg" />
+    <Content Include="Assets\images\travelplace\chittagong\coxs bazar.jpg" />
+    <Content Include="Assets\images\travelplace\chittagong\Nilgiri Mountains.jpg" />
+    <Content Include="Assets\images\travelplace\sylhet\jaflong.jpg" />
+    <Content Include="Assets\images\travelplace\sylhet\tangoar haor.jpg" />
+    <Content Include="Assets\js\bootstrap.min.js" />
+    <Content Include="Assets\js\Chart.min.js" />
+    <Content Include="Assets\js\floatmessage.js" />
+    <Content Include="Assets\js\jquery-3.4.1.min.js" />
+    <Content Include="Assets\js\jquery-confirm.min.js" />
+    <Content Include="Assets\js\jquery.hover3d.js" />
+    <Content Include="Assets\js\popper.min.js" />
+    <Content Include="Assets\js\wow.js" />
+    <Content Include="Assets\webfonts\fa-brands-400.svg" />
+    <Content Include="Assets\webfonts\fa-regular-400.svg" />
+    <Content Include="Assets\webfonts\fa-solid-900.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Models\traveliaModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>traveliaModel.edmx</DependentUpon>
+      <LastGenOutput>traveliaModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\traveliaModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>traveliaModel.edmx</DependentUpon>
+      <LastGenOutput>traveliaModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\GuiderController.cs" />
+    <Compile Include="Controllers\HotelController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\LogoutController.cs" />
+    <Compile Include="Controllers\TraveliaController.cs" />
+    <Compile Include="Controllers\TravellerController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\bookinginfo.cs">
+      <DependentUpon>traveliaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\customercaresalary.cs">
+      <DependentUpon>traveliaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\hotelinfo.cs">
+      <DependentUpon>traveliaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\messagetocare.cs">
+      <DependentUpon>traveliaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\messagetohotel.cs">
+      <DependentUpon>traveliaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\salarysheet.cs">
+      <DependentUpon>traveliaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\servicecharge.cs">
+      <DependentUpon>traveliaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\traveliaModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>traveliaModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\traveliaModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>traveliaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\traveliaModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>traveliaModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\travelplace.cs">
+      <DependentUpon>traveliaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\user.cs">
+      <DependentUpon>traveliaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\userinfo.cs">
+      <DependentUpon>traveliaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Admin\AdminRepository.cs" />
+    <Compile Include="Repository\Admin\IAdminRepository.cs" />
+    <Compile Include="Repository\Generic\IRepository.cs" />
+    <Compile Include="Repository\Generic\Repository.cs" />
+    <Compile Include="Repository\guider\GuiderRepository.cs" />
+    <Compile Include="Repository\guider\IGuiderRepository.cs" />
+    <Compile Include="Repository\Hotel\HotelRepository.cs" />
+    <Compile Include="Repository\Hotel\IHotelRepository.cs" />
+    <Compile Include="Repository\Login\ILoginRepository.cs" />
+    <Compile Include="Repository\Login\LoginRepository.cs" />
+    <Compile Include="Repository\Travelia\ITraveliaRepository.cs" />
+    <Compile Include="Repository\Travelia\TraveliaRepository.cs" />
+    <Compile Include="Repository\Traveller\ITravellerRepository.cs" />
+    <Compile Include="Repository\Traveller\TravellerRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <EntityDeploy Include="Models\traveliaModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>traveliaModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\traveliaModel.edmx.diagram">
+      <DependentUpon>traveliaModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Views\Travelia\Index.cshtml" />
+    <Content Include="Assets\css\admin.css.map" />
+    <Content Include="Assets\css\admin.scss" />
+    <Content Include="Assets\css\traveliaStyle.css.map" />
+    <Content Include="Assets\css\traveliaStyle.scss" />
+    <Content Include="Assets\css\travellerDest.css.map" />
+    <Content Include="Assets\css\travellerDest.scss" />
+    <Content Include="Assets\webfonts\fa-brands-400.eot" />
+    <Content Include="Assets\webfonts\fa-brands-400.ttf" />
+    <Content Include="Assets\webfonts\fa-brands-400.woff" />
+    <Content Include="Assets\webfonts\fa-brands-400.woff2" />
+    <Content Include="Assets\webfonts\fa-regular-400.eot" />
+    <Content Include="Assets\webfonts\fa-regular-400.ttf" />
+    <Content Include="Assets\webfonts\fa-regular-400.woff" />
+    <Content Include="Assets\webfonts\fa-regular-400.woff2" />
+    <Content Include="Assets\webfonts\fa-solid-900.eot" />
+    <Content Include="Assets\webfonts\fa-solid-900.ttf" />
+    <Content Include="Assets\webfonts\fa-solid-900.woff" />
+    <Content Include="Assets\webfonts\fa-solid-900.woff2" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\adminProfile.cshtml" />
+    <Content Include="Views\Admin\adminTraveller.cshtml" />
+    <Content Include="Views\Admin\adminTravelGuide.cshtml" />
+    <Content Include="Views\Admin\adminHotelEmp.cshtml" />
+    <Content Include="Views\Admin\adminCustCare.cshtml" />
+    <Content Include="Views\Admin\adminHotelinfo.cshtml" />
+    <Content Include="Views\Admin\adminTravelPlace.cshtml" />
+    <Content Include="Views\Admin\adminAddCust.cshtml" />
+    <Content Include="Views\Admin\adminCustAudit.cshtml" />
+    <Content Include="Views\Admin\adminCustSalarySheet.cshtml" />
+    <Content Include="Views\Admin\adminServiceCharge.cshtml" />
+    <Content Include="Views\Traveller\Index.cshtml" />
+    <Content Include="Views\Traveller\travellerProfile.cshtml" />
+    <Content Include="Views\Traveller\travellerDestination.cshtml" />
+    <Content Include="Views\Traveller\searchHotel.cshtml" />
+    <Content Include="Views\Traveller\travellerBooking.cshtml" />
+    <Content Include="Views\Traveller\travellerMyBooking.cshtml" />
+    <Content Include="Views\Hotel\Index.cshtml" />
+    <Content Include="Views\Hotel\hotelProfile.cshtml" />
+    <Content Include="Views\Hotel\hotelAdd.cshtml" />
+    <Content Include="Views\Hotel\hotelReq.cshtml" />
+    <Content Include="Views\Guider\Index.cshtml" />
+    <Content Include="Views\Guider\guiderProfile.cshtml" />
+    <Content Include="Views\Guider\guiderMyPlaces.cshtml" />
+    <Content Include="Views\Guider\guiderUpdatePlace.cshtml" />
+    <Content Include="Views\Guider\guiderAddPlace.cshtml" />
+    <Content Include="Views\Guider\guiderDestinations.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Assets\images\admin\travelplace\" />
+    <Folder Include="Assets\images\care\" />
+    <Folder Include="Assets\images\hotel\" />
+    <Folder Include="Assets\images\traveller\" />
+    <Folder Include="Views\Login\" />
+    <Folder Include="Views\Logout\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2252</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2252/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
